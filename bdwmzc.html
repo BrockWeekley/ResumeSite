@@ -5,6 +5,11 @@
         <title>Brock Weekley</title>
         <style>
             
+            p {
+                text-indent: 1rem;
+                line-height: 1.5;
+            }
+            
             hr {
                 border: 0;
                 height: .1rem;
@@ -16,17 +21,29 @@
             .card {
                 width: 40rem;
                 height: 30rem;
-                border-top: solid lightgray 1px;
-                border-left: solid lightgray 1px;
+                border-top: solid lightgray .1rem;
+                border-left: solid lightgray .1rem;
                 border-radius: .5rem;
                 background-color: whitesmoke;
-                box-shadow: .25rem .25rem lightgray; 
+                box-shadow: .25rem .25rem .5rem gainsboro; 
                 margin-bottom: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            
+            .card__body {
+                width: 100%;
+                height: 100%;
+                padding: 1rem 1rem;
+                box-sizing: border-box;
+                overflow: auto;
             }
             
             .card__header {
                 width: 100%;
-                height: 1rem;
+                height: 3rem;
                 text-align: center;
                 padding-top: 1rem;
                 font-size: 1.5rem;
@@ -35,7 +52,19 @@
                 color: #3d3c3d;
                 letter-spacing: .15rem;
             }
-
+            
+            .color__react {
+                color: #61dafb;
+            }
+            
+            .color__vue {
+                color: #41b883;
+            }
+            
+            .color__angular {
+                color: #dd0031
+            }
+ 
             .container {
                 width: 100%;
                 height: 100%;
@@ -68,14 +97,22 @@
                 width: 100%;
                 height: 8rem;
                 display: flex;
+                flex-direction: column;
+                justify-content: center;
                 align-items: center;
                 font-size: 4em;
-                font-family: MontSerrat, Tahoma, Arial, sans-serif;
+                font-family: Impact, Charcoal, sans-serif;
                 letter-spacing: .5rem;
             }
             
             .header__name {
                 min-width: 33rem;
+            }
+            
+            .header__subtitle {
+                color: silver;
+                min-width: 33rem;
+                font-size: 2rem;
             }
             
             .hello-world {
@@ -121,6 +158,7 @@
         </style>
     </head>
     <body class="full-size">
+
         <div class="container" id="container">
             <div class="typewriter" id="typewriter">
                 <div class="hello-world">Hello, World.</div>
@@ -129,8 +167,9 @@
 
         <div class="hidden" id="hidden">
             <div class="header">
-                <div class="header__name">Brock Weekley</div>
-                <img class="me" src="download.png" alt="me" />
+                <div class="header__name">I'm Brock Weekley</div>
+                <div class="header__subtitle">and these are my principles of development</div>
+<!--                <img class="me" src="download.png" alt="me" />-->
             </div>
             <div class="container__cards">
                 <div class="card">
@@ -138,17 +177,76 @@
                         Design
                         <hr />
                     </div>
+                    <div class="card__body">
+                        <div class="less__design">
+                            I focus on simple, usable, responsive, and accessible design through UI libraries and JavaScript frameworks.<br />
+                            <span>Read More</span>
+                        </div>
+                        <div class="more__design">
+                            <p>
+                                    In the 21st century, the web has eaten the world. As the greatest source of user interfacing in human history,
+                                the internet plays a part in the lives of billions of human beings around the world across billions of devices.
+                                When developing a User Interface, the key principles that I focus on are simple, usable, responsive, and accessible. In
+                                my extensive experience with both mobile and desktop development, A11Y and RWD principles have been at the forefront of
+                                beautiful, business oriented designs with the purpose of adding high value to both internal and external users. 
+                            </p>
+                            <p>
+                                    My designing skills include a multitude of JavaScript frameworks such as <span class="color__react">React</span>, 
+                                <span class="color__vue">Vue</span>, and <span class="color__angular">Angular</span>. I also have extensive experience 
+                                with hybrid single codebase tools such as Ionic and React-Native. This, in combination with a knowledge of UI libraries 
+                                such as Bootstrap and Material, CSS principles such as grid and flexbox, and other more complex styling languages
+                                such as SASS, grant me all of the tools and know-how to build an elegant interface for any user.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
                     <div class="card__header">
-                        Develop
+                        Data
                         <hr />
+                    </div>
+                    <div class="card__body">
+                        <div class="less__data">
+                            My codebases are clean, scaleable, and feature safe, as well as the codebases of the teams I manage.<br />
+                            <span>Read More</span>
+                        </div>
+                        <div class="more__data">
+                            <p>
+                                    As I focus the aspects of my development on the user, one of the most important features of any application
+                                is data integrity, along with data structure. Clean, reliable code is an application feature that, while unseen, is 
+                                more important than any other. A user experience can be modified, fixed, or improved, but bad code is forever. It is
+                                thus a highlight of my development style to create scaleable projects with reusability in mind. This allows me to account 
+                                for security vulnerabilities and manage data in an industry standard and practical way, avoiding things slipping through
+                                the cracks because of poor spaghetti code.
+                            </p>
+                            <p>
+                                    My data design practice often involves Model View Controller and Object Oriented architecture, designing Java apps 
+                                using Springboot and MySQL. I have heavy experience building REST APIs in both Java and Python. My knack for data structure
+                                extends likewise into the front-end with tools such as TypeScript, Wave, Axe, and Lighthouse which allow me to keep code
+                                scaleable, manageable, and within best practices. In my time managing development teams, GitHub familiarity has been
+                                instrumental in ensuring my teams write the best code they can through pull requests and code review.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card__header">
                         Deploy
                         <hr />
+                    </div>
+                    <div class="card__body">
+                        <div class="less__deploy">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+                            <span>Read More</span>
+                        </div>
+                        <div class="more__deploy">
+                            <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, orci nec lacinia lobortis, augue metus laoreet nisl, vitae luctus arcu tellus eu ligula. Nulla mi elit, aliquam in ex eu, iaculis volutpat quam. Pellentesque interdum nisl non ex euismod aliquet. Curabitur lorem nisl, malesuada at neque a, bibendum elementum mi. Nunc sodales ligula sit amet ligula semper vestibulum. Maecenas lorem mi, placerat id justo eu, gravida pretium enim. Proin ornare id lorem a aliquam. Sed congue magna id orci posuere, ac tristique tortor aliquam. Praesent vel sodales ipsum. Quisque dignissim ex et mauris tincidunt hendrerit. Maecenas leo nunc, condimentum a risus sit amet, luctus laoreet dolor. Integer pellentesque consectetur nunc nec malesuada. Aenean fringilla a lacus varius euismod. Phasellus sed urna pellentesque, faucibus leo ac, pulvinar dolor.
+                            </p>
+                            <p>
+                                    Curabitur posuere finibus purus, vitae auctor mi ornare vitae. Aliquam maximus elit mi, eget dapibus sapien porttitor eget. Mauris imperdiet mi sit amet dolor tempor laoreet. Nam turpis massa, placerat et magna id, pharetra blandit odio. Vivamus maximus dui ac diam varius feugiat. Donec non odio rutrum massa congue interdum. Quisque urna purus, blandit vitae velit ac, convallis feugiat neque. Phasellus id iaculis erat. Mauris convallis purus eget vestibulum lacinia. Integer eu luctus metus, eu accumsan purus. Sed in consectetur nisi. Suspendisse hendrerit neque ut facilisis auctor. Suspendisse nisl mi, scelerisque vitae bibendum eget, pellentesque at metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -157,6 +255,7 @@
         <script>
             function init() {
                 'use strict';
+
                 setTimeout(function(){
                     const container = document.getElementById('container');
                     const typewriter = document.getElementById('typewriter');
