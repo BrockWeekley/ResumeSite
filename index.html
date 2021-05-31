@@ -353,7 +353,7 @@
             
             .projects {
                 width: 100%;
-                height: 50rem;
+                height: 50em;
                 box-sizing: border-box;
                 display: flex;
                 flex-direction: column;
@@ -363,14 +363,33 @@
             
             .project {
                 width: 40%;
-                height: 6rem;
+                height: 6em;
                 border-radius: 1rem;
+                border: solid slategray 1px;
                 background-color: #bee1d9;
                 box-shadow: 1rem 1rem gainsboro;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                padding: 1rem;
+                padding: 1em;
+            }
+            
+            .project--description {
+                padding-left: 1em;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start
+            }
+            
+            .project--icon {
+                min-width: 5em;
+                max-width: 6em;
+                height: 5em;
+                border-radius: 5%;
+            }
+            
+            .project--icon__fatplants {
+                min-width: 4em;
             }
             
             .section {
@@ -472,10 +491,11 @@
                         second year at Mizzou, I earned an internship at SS&C in Kansas City, Missouri. Upon
                         finishing this internship, I was offered a part time position while I finished my degree.
                         I have contributed to many high profile projects here using Angular, Springboot Java, MySQL
-                        and many more modern technologies. While completing my third year at Mizzou, I also took on 
+                        and many other modern technologies. While completing my third year at Mizzou, I also took on 
                         a lead software developer position at the University where I lead a team that
-                        built many apps for the use of the college, using new and exciting technologies 
-                        for web development and cloud infrastructure.<br />
+                        built many apps for the use of the college. Leading a development team during the last year of
+                        my Bachelor's, we developed the application, RIDSI, for the state of Missouri's traffic industry, 
+                        including MoDoT, St. Charles County, and East-West Gateway.<br />
                         <span class="about-me__text--bold">Thank you for taking an interest in me and my page!</span>
                     </div>
                 </div>
@@ -498,7 +518,7 @@
                         </div>
                         <div class="card__body" id="card--design">
                             <div class="less" id="less--design">
-                                I focus on simple, usable, responsive, and accessible design through UI libraries and JavaScript frameworks.<br /><br />
+                                I focus on simple, reusable, responsive, and accessible design through modern UI libraries and JavaScript frameworks.<br /><br />
                                 <button onclick="more('design')" class="more__button">Read More</button>
                             </div>
                             <div class="more" id="more--design">
@@ -526,23 +546,21 @@
                         </div>
                         <div class="card__body" id="card--data">
                             <div  class="less" id="less--data">
-                                My codebases are clean, scaleable, and feature safe, as well as the codebases of the teams I manage.<br /><br />
+                                Modular stateless endpoints are the key to exposing data safely and effectively.<br /><br />
                                 <button onclick="more('data')" class="more__button">Read More</button>
                             </div>
                             <div class="more" id="more--data">
                                 <p>
-                                        As I focus the aspects of my development on the user, one of
-                                    the most important features of any application
+                                        As I focus the aspects of my development on the user, one of the most important features of any application
                                     is data integrity, along with data structure. Clean, reliable code is an application feature that, while unseen, is 
-                                    more important than any other. It is
-                                    a highlight of my development style to create scaleable projects with reusability in mind. This allows me to account 
-                                    for security vulnerabilities and manage data in an industry standard and practical way.
+                                    more important than any other. It is a highlight of my development style to create scaleable projects with reusability 
+                                    in mind. This allows me to account for security vulnerabilities and manage data in an industry standard and practical way.
                                 </p>
                                 <p>
                                         My data design practice often involves Model View Controller and Object Oriented architecture, designing Java apps 
                                     using Springboot and MySQL. I have heavy experience building REST APIs in both Java and Python. My knack for data structure
-                                    extends likewise into the front-end with tools such as TypeScript, Wave, Axe, and Lighthouse which allow me to keep code
-                                    scaleable, manageable, and within best practices. In my time managing development teams, GitHub familiarity has been
+                                    extends into the front-end with tools such as TypeScript, Wave, Axe, and Lighthouse which allow me to keep code
+                                    scaleable, manageable, and modular to serve as a portal to data. In my time managing development teams, GitHub has been
                                     instrumental in ensuring my teams write the best code they can through pull requests and code review.
                                 </p>
                             </div>
@@ -558,16 +576,23 @@
                         <div class="card__body" id="card--deploy">
                             
                             <div class="less" id="less--deploy">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />
+                                Continuous Integration, Continuous Deployment is the key to an interactive client and smooth workflow.<br /><br />
                                 <button onclick="more('deploy')" class="more__button">Read More</button>
                             </div>
                             
                             <div class="more" id="more--deploy">
                                 <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, orci nec lacinia lobortis, augue metus laoreet nisl, vitae luctus arcu tellus eu ligula. Nulla mi elit, aliquam in ex eu, iaculis volutpat quam. Pellentesque interdum nisl non ex euismod aliquet. Curabitur lorem nisl, malesuada at neque a, bibendum elementum mi. Nunc sodales ligula sit amet ligula semper vestibulum. Maecenas lorem mi, placerat id justo eu, gravida pretium enim. Proin ornare id lorem a aliquam. Sed congue magna id orci posuere, ac tristique tortor aliquam. Praesent vel sodales ipsum. Quisque dignissim ex et mauris tincidunt hendrerit. Maecenas leo nunc, condimentum a risus sit amet, luctus laoreet dolor. Integer pellentesque consectetur nunc nec malesuada. Aenean fringilla a lacus varius euismod. Phasellus sed urna pellentesque, faucibus leo ac, pulvinar dolor.
+                                        In my extensive experience in both internal GitLab pipelines and external GitHub pipelines, I have learned that CICD 
+                                    is integral to the client and the developer experience. Client feedback and satisfaction is greatly increased by seeing
+                                    regular changes to products, providing the ability for real hands-on interaction. Developer communication is increased 
+                                    when the barrier of "It works on my machine!" is removed. CICD pipelines also further increase code testability and
+                                    clarity, as linters and unit tests ensure each push contains valid and positive code.
                                 </p>
                                 <p>
-                                        Curabitur posuere finibus purus, vitae auctor mi ornare vitae. Aliquam maximus elit mi, eget dapibus sapien porttitor eget. Mauris imperdiet mi sit amet dolor tempor laoreet. Nam turpis massa, placerat et magna id, pharetra blandit odio. Vivamus maximus dui ac diam varius feugiat. Donec non odio rutrum massa congue interdum. Quisque urna purus, blandit vitae velit ac, convallis feugiat neque. Phasellus id iaculis erat. Mauris convallis purus eget vestibulum lacinia. Integer eu luctus metus, eu accumsan purus. Sed in consectetur nisi. Suspendisse hendrerit neque ut facilisis auctor. Suspendisse nisl mi, scelerisque vitae bibendum eget, pellentesque at metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                        Building custom clouds with Docker containers in kubernetes is one of the ways I have learned to create a scalable
+                                    and secure environment, as well as using public cloud options for bursting, such as AWS or Google Cloud. This is increasingly
+                                    important for internal services, as the days of monolithic applications and companies are coming to an end. It is important
+                                    that software architects like myself build something for the future, rather than something for the day. 
                                 </p>
                             </div>
                         </div>
@@ -589,16 +614,38 @@
                 </h1>
                 <div class="projects">
                     <div class="project">
-                        😀 Some Cool Angular Project!
+                        <img class="project--icon" src="RIDSIR.png" alt="RIDSI" /> 
+                        <div class="project--description">
+                            <span>RIDSI, Regional Intelligent Transportation System Data Sharing Initiative</span>
+                            <span>&nbsp;</span>
+                            <span>Role: Lead Developer and Frontend Architect</span>
+                            <a href="https://ridsi-dash.com">ridsi-dash.com</a>
+                        </div>
                     </div>
                     <div class="project">
-                        😀 Some Cool Ionic Project!
+                        <img class="project--icon" src="BicentennialLogoMain.png" alt="Missouri Bicentennial" /> 
+                        <div class="project--description">
+                            <span>Missouri Bicentennial Events, event organizer for the state of Missouri Bicentennial committee</span>
+                            <span>&nbsp;</span>
+                            <span>Role: Team Lead and Cloud Engineer</span>
+                            <a href="https://missouri2021events.org">missouri2021events.org</a>
+                        </div>
                     </div>
                     <div class="project">
-                        😀 Some Cool React Project!
+                        <img class="project--icon" src="ABCBS.png" alt="ABCBS" /> 
+                        <div class="project--description">
+                            <span>Arkansas Blue Cross BlueShield My Blueprint, mobile and web application for ABCBS members to view health records, policy information, and pay bills.</span>
+                            <span>Role: Frontend Developer for SS&C</span>
+                            <a href="https://www.arkansasbluecross.com/members/individual-and-family/personalized-services/mobile-app">arkansasbluecross.com</a>
+                        </div>
                     </div>
                     <div class="project">
-                        😀 Some Cool Java Project!
+                        <img class="project--icon project--icon__fatplants" src="Fatplants.png" alt="Fatplants" /> 
+                        <div class="project--description">
+                            <span>Fatplants, the one stop tool for biological data procedures involving plant fatty acids at the University of Missouri</span>
+                            <span>Role: Frontend Developer and Cloud Engineer for Mizzou</span>
+                            <a href="https://fatplants.net">fatplants.net</a>
+                        </div>
                     </div>
                 </div>
                 <div class="next-section">
