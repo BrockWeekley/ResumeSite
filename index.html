@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Brock Weekley</title>
+        <link rel="icon" type="image/x-icon" href="mustache.ico">
         <style>
             
             a {
@@ -16,9 +17,10 @@
             }
             
             p {
-                text-indent: 1rem;
                 line-height: 1.5;
                 margin: 0;
+                font-size: .88em;
+                font-family: Cambria, serif;
             }
             
             hr {
@@ -90,7 +92,15 @@
               border-width: 0 3px 3px 0;
               display: inline-block;
               opacity: .5;
-              cursor: pointer;
+            }
+
+            .arrow__container {
+                width: 3em;
+                height: 3em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
             }
             
             .arrow--down {
@@ -104,8 +114,8 @@
             }
             
             .card {
-                width: 40rem;
-                height: 30rem;
+                width: 30rem;
+                height: 20rem;
                 border-radius: .1rem;
                 background-color: #ffb8b8;
                 color: #3d3c3d;
@@ -181,6 +191,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
+                padding-top: 5em;
             }
             
             .contacts__text {
@@ -299,6 +310,7 @@
                 color: #2e5376;
                 min-width: 33rem;
                 font-size: 2rem;
+                padding-left: 1em;
 /*                text-shadow: .1rem .1rem black;*/
             }
             
@@ -348,7 +360,11 @@
             
             .next-section {
                 width: 100%;
+                min-height: 4em;
+                margin-top: 2em;
                 text-align: center;
+                display: flex;
+                justify-content: center;
             }
             
             .projects {
@@ -362,7 +378,7 @@
             }
             
             .project {
-                width: 40%;
+                width: 40em;
                 height: 6em;
                 border-radius: 1rem;
                 border: solid slategray 1px;
@@ -378,7 +394,10 @@
                 padding-left: 1em;
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-start
+                justify-content: flex-start;
+                font-family: Cambria, serif;
+                font-size: 1.4em;
+                height: 5em;
             }
             
             .project--icon {
@@ -460,235 +479,223 @@
     </head>
     <body class="full-size">
         <main class="full-size" id="main">
-        <div class="container" id="container">
-            <div class="typewriter" id="typewriter">
-                <div class="hello-world">Hello, World.</div>
-            </div>
-        </div>
-
-        <div class="hidden" id="hidden">
-            <div onclick="toTop()" class="to-top" id="to-top">
-                <div class="arrow arrow--up"></div>
-            </div>
-            <div class="section">
-                <h1 class="header">
-                    <div class="header__name">I'm Brock Weekley</div>
-                    <div class="header__subtitle">and this is me</div>
-                </h1>
-
-                <div class="about-me__container">
-                    <div class="about-me__image__container">
-                        <div class="about-me__hr__container">
-                            <img class="about-me__image" src="brock_weekley.png" alt="profile_picture" />
-                            <hr class="hr--full" />
-                        </div>
-                    </div>
-                    <div class="about-me__text">
-                        <span class="about-me__text--bold">Welcome and Bienvenue!</span> <br />
-                        I am a professional web developer and cloud designer. I have
-                        recently completed my Master's degree in Computer Science at the University of Missouri. 
-                        During my time at college, I have gained many years of industry experience. After my
-                        second year at Mizzou, I earned an internship at SS&C in Kansas City, Missouri. Upon
-                        finishing this internship, I was offered a part time position while I finished my degree.
-                        I have contributed to many high profile projects here using Angular, Springboot Java, MySQL
-                        and many other modern technologies. While completing my third year at Mizzou, I also took on 
-                        a lead software developer position at the University where I lead a team that
-                        built many apps for the use of the college. Leading a development team during the last year of
-                        my Bachelor's, we developed the application, RIDSI, for the state of Missouri's traffic industry, 
-                        including MoDoT, St. Charles County, and East-West Gateway.<br />
-                        <span class="about-me__text--bold">Thank you for taking an interest in me and my page!</span>
-                    </div>
+            <div class="container" id="container">
+                <div class="typewriter" id="typewriter">
+                    <div class="hello-world">Hello, World.</div>
                 </div>
-                
-                <div class="next-section">
-                    <div onclick="nextsection('two')" class="arrow arrow--down"></div>
-                </div>
-                
             </div>
 
-            <div class="section section--two" id="section--two">
-                <h1 class="header">
-                    <div class="header__subtitle header--second">and these are my principles of development</div>
-                </h1>
-                <div class="cards__container">
-                    <div class="card">
-                        <div class="card__header">
-                            Design
-                            <hr />
-                        </div>
-                        <div class="card__body" id="card--design">
-                            <div class="less" id="less--design">
-                                I focus on simple, reusable, responsive, and accessible design through modern UI libraries and JavaScript frameworks.<br /><br />
-                                <button onclick="more('design')" class="more__button">Read More</button>
-                            </div>
-                            <div class="more" id="more--design">
-                                <p>
-                                        In the 21st century, the web has eaten the world. As the greatest source of user interfacing in human history,
-                                    the internet plays a part in the lives of billions of human beings around the world across billions of devices.
-                                    When developing a User Interface, the key principles that I focus on are simple, usable, responsive, and accessible. In
-                                    my extensive experience with both mobile and desktop development, A11Y and RWD principles have been at the forefront of
-                                    beautiful, business oriented designs with the purpose of adding high value to both internal and external users. 
-                                </p>
-                                <p>
-                                        My designing skills include a multitude of JavaScript frameworks such as <span class="color__react">React</span>, 
-                                    <span class="color__vue">Vue</span>, and <span class="color__angular">Angular</span>. I also have extensive experience 
-                                    with hybrid single codebase tools such as Ionic and React-Native. This, in combination with a knowledge of UI libraries 
-                                    such as Bootstrap and Material, CSS principles such as grid and flexbox, and other more complex styling languages
-                                    such as SASS, grant me all of the tools and know-how to build an elegant interface for any user.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__header">
-                            Data
-                            <hr />
-                        </div>
-                        <div class="card__body" id="card--data">
-                            <div  class="less" id="less--data">
-                                Modular stateless endpoints are the key to exposing data safely and effectively.<br /><br />
-                                <button onclick="more('data')" class="more__button">Read More</button>
-                            </div>
-                            <div class="more" id="more--data">
-                                <p>
-                                        As I focus the aspects of my development on the user, one of the most important features of any application
-                                    is data integrity, along with data structure. Clean, reliable code is an application feature that, while unseen, is 
-                                    more important than any other. It is a highlight of my development style to create scaleable projects with reusability 
-                                    in mind. This allows me to account for security vulnerabilities and manage data in an industry standard and practical way.
-                                </p>
-                                <p>
-                                        My data design practice often involves Model View Controller and Object Oriented architecture, designing Java apps 
-                                    using Springboot and MySQL. I have heavy experience building REST APIs in both Java and Python. My knack for data structure
-                                    extends into the front-end with tools such as TypeScript, Wave, Axe, and Lighthouse which allow me to keep code
-                                    scaleable, manageable, and modular to serve as a portal to data. In my time managing development teams, GitHub has been
-                                    instrumental in ensuring my teams write the best code they can through pull requests and code review.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card__header">
-                            Deploy
-                            <hr />
-                        </div>
-                        
-                        <div class="card__body" id="card--deploy">
-                            
-                            <div class="less" id="less--deploy">
-                                Continuous Integration, Continuous Deployment is the key to an interactive client and smooth workflow.<br /><br />
-                                <button onclick="more('deploy')" class="more__button">Read More</button>
-                            </div>
-                            
-                            <div class="more" id="more--deploy">
-                                <p>
-                                        In my extensive experience in both internal GitLab pipelines and external GitHub pipelines, I have learned that CICD 
-                                    is integral to the client and the developer experience. Client feedback and satisfaction is greatly increased by seeing
-                                    regular changes to products, providing the ability for real hands-on interaction. Developer communication is increased 
-                                    when the barrier of "It works on my machine!" is removed. CICD pipelines also further increase code testability and
-                                    clarity, as linters and unit tests ensure each push contains valid and positive code.
-                                </p>
-                                <p>
-                                        Building custom clouds with Docker containers in kubernetes is one of the ways I have learned to create a scalable
-                                    and secure environment, as well as using public cloud options for bursting, such as AWS or Google Cloud. This is increasingly
-                                    important for internal services, as the days of monolithic applications and companies are coming to an end. It is important
-                                    that software architects like myself build something for the future, rather than something for the day. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
+            <div class="hidden" id="hidden">
+                <div onclick="toTop()" class="to-top" id="to-top">
+                    <div class="arrow arrow--up"></div>
                 </div>
-                
-                <div class="next-section">
-                    <div onclick="nextsection('three')" class="arrow arrow--down"></div>
+                <div class="section">
+                    <h1 class="header">
+                        <div class="header__name">I'm Brock Weekley</div>
+                        <div class="header__subtitle">and this is me</div>
+                    </h1>
+
+                    <div class="about-me__container">
+                        <div class="about-me__image__container">
+                            <div class="about-me__hr__container">
+                                <img class="about-me__image" src="brock_weekley.webp" alt="profile_picture" />
+                                <hr class="hr--full" />
+                            </div>
+                        </div>
+                        <div class="about-me__text">
+                            <span class="about-me__text--bold">Welcome and hello!</span> <br />
+                            <p>I am a Cloud Engineer and Web Developer deeply passionate about achieving results through leadership.
+                            Specializing in cloud infrastructures and multi-platform applications, I possess a strong proficiency in Agile development and DevOps optimization.
+                            In my time at my current role as an SS&C Cloud Platform Engineer, I have helped develop an internal cloud that supports hundreds of users and thousands
+                            of virtual machines for various applications and pipelines across the company, implementing new cloud features and developing efficient deployment pipelines.
+                            Previously in this role, I have spearheaded Ionic front-end development initiatives for Arkansas Blue Cross Blue Shield and developed a template to be used by other companies.
+                            Before this role, I led teams in the development of impactful applications for the state of Missouri's traffic industry, including MoDoT, St. Charles County, and East-West Gateway.
+                            Equipped with a Master's degree in Computer Science from the University of Missouri, Columbia, I bring a robust foundation and drive for innovation to every project I touch.<br />
+                            </p>
+                            <span class="about-me__text--bold">Thank you for taking an interest in me and my page!</span>
+                        </div>
+                    </div>
+
+                    <div class="next-section">
+                        <div onclick="nextsection('two')" class="arrow__container">
+                            <div class="arrow arrow--down"></div>
+                        </div>
+                    </div>
+
                 </div>
-                
+
+                <div class="section section--two" id="section--two">
+                    <h1 class="header">
+                        <div class="header__subtitle header--second">and these are my principles of development</div>
+                    </h1>
+                    <div class="cards__container">
+                        <div class="card">
+                            <div class="card__header">
+                                Design
+                                <hr />
+                            </div>
+                            <div class="card__body" id="card--design">
+                                <div class="less" id="less--design">
+                                    <p>I focus on simple, reusable, responsive, and accessible design through modern UI libraries and JavaScript frameworks.</p><br /><br />
+                                    <button onclick="more('design')" class="more__button">Read More</button>
+                                </div>
+                                <div class="more" id="more--design">
+                                    <p>
+
+                                        In the 21st century, the internet dominates daily life worldwide across billions of devices.
+                                        When crafting User Interfaces, my focus is on simplicity, usability, responsiveness, and accessibility.
+                                        With extensive experience in both mobile and desktop development,
+                                        I prioritize A11Y and RWD principles for effective, business-driven designs benefiting internal and external users.
+                                        Proficient in JavaScript frameworks like
+                                        <span class="color__react">React</span>, <span class="color__vue">Vue</span>, and <span class="color__angular">Angular</span>,
+                                        as well as hybrid tools like Ionic and React-Native, I leverage UI libraries such as Bootstrap and Material,
+                                        CSS principles like grid and flexbox, and advanced styling languages like SASS to create elegant interfaces.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                Data
+                                <hr />
+                            </div>
+                            <div class="card__body" id="card--data">
+                                <div  class="less" id="less--data">
+                                    <p>Modular stateless endpoints are the key to exposing data safely and effectively.</p><br /><br />
+                                    <button onclick="more('data')" class="more__button">Read More</button>
+                                </div>
+                                <div class="more" id="more--data">
+                                    <p>
+                                        Focusing on user-centric development, I prioritize data integrity and structure, emphasizing clean, reliable code for scalable,
+                                        reusable projects. Using Model View Controller and Object-Oriented architecture, I design Java apps with Springboot and MySQL,
+                                        and develop REST APIs in Java and Python. Leveraging tools like TypeScript, Wave, Axe, and Lighthouse,
+                                        I ensure frontend code remains compliant, manageable, and modular.
+                                        I use GitHub to facilitate effective team collaboration and code integrity through codeQL, sonar, and code reviews.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__header">
+                                Deploy
+                                <hr />
+                            </div>
+
+                            <div class="card__body" id="card--deploy">
+
+                                <div class="less" id="less--deploy">
+                                    <p>Continuous Integration, Continuous Deployment is the key to an interactive client and smooth workflow.</p><br /><br />
+                                    <button onclick="more('deploy')" class="more__button">Read More</button>
+                                </div>
+
+                                <div class="more" id="more--deploy">
+                                    <p>
+                                        From my extensive experience with GitLab, Jenkins, and GitHub pipelines,
+                                        I've found that CICD greatly enhances both client and developer satisfaction.
+                                        Regular product updates foster client engagement and eliminate communication barriers for developers.
+                                        I've honed skills in creating scalable,
+                                        secure environments by building custom clouds with Docker containers in Kubernetes,
+                                        and utilizing public cloud options like AWS or Google Cloud for bursting.
+                                        It's crucial for software architects to find a balance between future-proof solutions
+                                        and short-term fixes, to deliver value quickly but eventually retire applications to a stable KTLO status.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="next-section">
+                        <div onclick="nextsection('three')" class="arrow__container">
+                            <div class="arrow arrow--down"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="section section--three" id="section--three">
+
+                    <h1 class="header">
+                        <div class="header__subtitle header--third">and this is my work</div>
+                    </h1>
+                    <div class="projects">
+                        <div class="project">
+                            <img class="project--icon" src="RIDSIR.webp" alt="RIDSI" />
+                            <div class="project--description">
+                                <span><strong>RIDSI</strong>, Regional Intelligent Transportation System Data Sharing Initiative</span>
+                                <span>&nbsp;</span>
+                                <a href="https://ridsi-dash.com">ridsi-dash.com</a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img class="project--icon" src="ABCBS.webp" alt="ABCBS" />
+                            <div class="project--description">
+                                <span><strong>Arkansas Blue Cross BlueShield My Blueprint</strong>,
+                                    mobile and web application for ABCBS members to view health records, policy information, and pay bills
+                                </span>
+                                <a href="https://www.arkansasbluecross.com/members/individual-and-family/personalized-services/mobile-app">arkansasbluecross.com</a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img class="project--icon project--icon__fatplants" src="Fatplants.webp" alt="Fatplants" />
+                            <div class="project--description">
+                                <span><strong>Fatplants</strong>, the one stop tool for biological data procedures involving plant fatty acids at the University of Missouri</span>
+                                <a href="https://fatplants.net">fatplants.net</a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img class="project--icon" src="BicentennialLogoMain.webp" alt="Missouri Bicentennial" />
+                            <div class="project--description">
+                                <span><strong>Missouri Bicentennial Events</strong>, event organizer for the state of Missouri Bicentennial committee</span>
+                                <span>&nbsp;</span>
+                                <a href="https://missouri2021events.org">missouri2021events.org</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next-section">
+                        <div onclick="nextsection('four')" class="arrow__container">
+                            <div onclick="nextsection('four')" class="arrow arrow--down"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section section--four" id="section--four">
+
+                    <h1 class="header">
+                        <div class="header__subtitle header--fourth">and here's my contacts
+                        </div>
+                    </h1>
+                    <div class="contacts__container">
+                        <div class="contacts">
+                            <button onclick="showcontact('phone')" class="contact--phone--button">
+                                <img class="contact__icon contact--phone" src="phone.webp" alt="phone" />
+                            </button>
+
+                            <button onclick="showcontact('email')" class="contact--email">
+                                <img class="contact__icon" src="email.webp" alt="email" />
+                            </button>
+
+                            <button onclick="showcontact('github')" class="contact--github">
+                                <img class="contact__icon" src="github.webp" alt="github" />
+                            </button>
+
+                            <button onclick="showcontact('linkedin')" class="contact--linkedin">
+                                <img class="contact__icon" src="linkedin.webp" alt="linkedin" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contacts__text__container">
+                        <div class="contacts__text">
+                            <a href="tel:816-806-9896" class="contact__text" id="phone">(816) 806-9896</a>
+                            <a href="mailto:brockweekley@gmail.com" class="contact__text" id="email">brockweekley@gmail.com</a>
+                            <a href="https://github.com/BrockWeekley" class="contact__text" id="github">BrockWeekley</a>
+                            <a href="https://www.linkedin.com/in/brock-weekley/" class="contact__text" id="linkedin">Brock Weekley</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            
-            <div class="section section--three" id="section--three">
-            
-                <h1 class="header">
-                    <div class="header__subtitle header--third">and this is my work
-                    </div>
-                </h1>
-                <div class="projects">
-                    <div class="project">
-                        <img class="project--icon" src="RIDSIR.png" alt="RIDSI" /> 
-                        <div class="project--description">
-                            <span>RIDSI, Regional Intelligent Transportation System Data Sharing Initiative</span>
-                            <span>&nbsp;</span>
-                            <span>Role: Lead Developer and Frontend Architect</span>
-                            <a href="https://ridsi-dash.com">ridsi-dash.com</a>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img class="project--icon" src="BicentennialLogoMain.png" alt="Missouri Bicentennial" /> 
-                        <div class="project--description">
-                            <span>Missouri Bicentennial Events, event organizer for the state of Missouri Bicentennial committee</span>
-                            <span>&nbsp;</span>
-                            <span>Role: Team Lead and Cloud Engineer</span>
-                            <a href="https://missouri2021events.org">missouri2021events.org</a>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img class="project--icon" src="ABCBS.png" alt="ABCBS" /> 
-                        <div class="project--description">
-                            <span>Arkansas Blue Cross BlueShield My Blueprint, mobile and web application for ABCBS members to view health records, policy information, and pay bills.</span>
-                            <span>Role: Frontend Developer for SS&C</span>
-                            <a href="https://www.arkansasbluecross.com/members/individual-and-family/personalized-services/mobile-app">arkansasbluecross.com</a>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img class="project--icon project--icon__fatplants" src="Fatplants.png" alt="Fatplants" /> 
-                        <div class="project--description">
-                            <span>Fatplants, the one stop tool for biological data procedures involving plant fatty acids at the University of Missouri</span>
-                            <span>Role: Frontend Developer and Cloud Engineer for Mizzou</span>
-                            <a href="https://fatplants.net">fatplants.net</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="next-section">
-                    <div onclick="nextsection('four')" class="arrow arrow--down"></div>
-                </div>
-            </div>
-            
-            <div class="section section--four" id="section--four">
-            
-                <h1 class="header">
-                    <div class="header__subtitle header--fourth">and here's my contacts
-                    </div>
-                </h1>
-                <div class="contacts__container">
-                    <div class="contacts">
-                        <button onclick="showcontact('phone')" class="contact--phone--button">
-                            <img class="contact__icon contact--phone" src="phone.png" alt="phone" />
-                        </button>
-                        
-                        <button onclick="showcontact('email')" class="contact--email">
-                            <img class="contact__icon" src="email.png" alt="email" />
-                        </button>
-                        
-                        <button onclick="showcontact('github')" class="contact--github">
-                            <img class="contact__icon" src="github.png" alt="github" />
-                        </button>
-                        
-                        <button onclick="showcontact('linkedin')" class="contact--linkedin">
-                            <img class="contact__icon" src="linkedin.png" alt="linkedin" />
-                        </button>
-                    </div>
-                </div>
-                <div class="contacts__text__container">
-                    <div class="contacts__text">
-                        <a href="tel:816-806-9896" class="contact__text" id="phone">(816) 806-9896</a>
-                        <a href="mailto:brockweekley@gmail.com" class="contact__text" id="email">brockweekley@gmail.com</a>
-                        <a href="https://github.com/BrockWeekley" class="contact__text" id="github">BrockWeekley</a>
-                        <a href="https://www.linkedin.com/in/brock-weekley/" class="contact__text" id="linkedin">Brock Weekley</a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
         
         </main>
         <script>
@@ -698,7 +705,7 @@
                 setTimeout(function(){
                     const container = document.getElementById('main');
                     const typewriter = document.getElementById('typewriter');
-                    
+
                     container.style.justifyContent = 'flex-start';
                     container.innerHTML = document.getElementById('hidden').innerHTML;
 
@@ -716,7 +723,8 @@
             
             function nextsection(element) {
                 const container = document.getElementById('section--' + element);
-                container.scrollIntoView(true);
+                const y = container.getBoundingClientRect().top + window.scrollY + (1);
+                window.scrollTo({top: y, behavior: 'smooth'});
             }
             
             function showcontact(contact) {
